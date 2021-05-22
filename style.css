@@ -1,0 +1,176 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    scroll-behavior: smooth;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    padding: 5% 0%;
+    display: grid;
+    grid-template-columns: 700px 1fr;
+}
+
+.title{
+    width: 500px;
+}
+
+.title-text{
+    text-align: left;
+    color: hsl(300, 43%, 22%);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.title-discription{
+    text-align: left;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rating{
+    padding: 20px 30px;
+    background: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    margin: 20px 0px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+
+.rating-1{
+    margin-left: -50px;
+}
+
+.rating-3{
+    margin-left: 50px;
+}
+
+.stars{
+    display: inline;
+}
+
+.rating-text{
+    margin-left: 30px;
+}
+
+.info{
+    display: flex;
+}
+
+.info-text{
+    padding-left: 20px;
+}
+
+.name{
+    font-weight: 700;
+}
+
+.buyer{
+    color: hsl(333, 80%, 67%);
+}
+
+.content{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    background: hsl(300, 43%, 22%);
+    width: 300px;
+    border-radius: 10px;
+    padding: 50px 30px;
+    /* margin: 00px 10px; */
+    color: hsl(300, 24%, 96%);
+}
+
+.card-1{
+    margin: -20px 0px 20px 0px;
+}
+
+.card-2{
+    margin: 0px;
+}
+
+.card-3{
+    margin: 20px 0px -20px 0px;
+}
+
+
+.profile-pic{
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-pic img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.testimonials{
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.attribution {
+    margin-top: 50px;
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media (max-width: 700px) {
+    .heading{
+        grid-template-columns: 1fr;
+    }
+
+    .title-text, .title-discription{
+        text-align: center;
+    }
+
+    .rating, .reviews{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rating-1, .rating-3{
+        margin: 0;
+    }
+
+    .content{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-1, .card-2, .card-3{
+        margin: 10px 0px;
+    }
+}
